@@ -170,20 +170,22 @@ body {
   .card {
     max-width: 384px;
 
-    button {
-      font-size: var(--fs-14);
-    }
+    .card__text {
+      button {
+        font-size: var(--fs-14);
+      }
 
-    span {
-      font-size: var(--fs-14);
-    }
+      span {
+        font-size: var(--fs-14);
+      }
 
-    a {
-      font-size: var(--fs-24);
-    }
+      a {
+        font-size: var(--fs-24);
+      }
 
-    p {
-      font-size: var(--fs-16);
+      p {
+        font-size: var(--fs-16);
+      }
     }
   }
 }
