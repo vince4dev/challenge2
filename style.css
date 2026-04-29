@@ -119,6 +119,12 @@ body {
       &:hover {
         background-color: var(--c-yellow-light);
       }
+
+      &:focus {
+        color: var(--c-yellow-light);
+        outline: 1px solid var(--c-yellow);
+        outline-offset: 2px;
+      }
     }
 
     /* Date */
@@ -166,7 +172,7 @@ body {
   }
 }
 
-@media screen and (width >= 400px) {
+@media (min-width: 400px) {
   .card {
     max-width: 384px;
 
