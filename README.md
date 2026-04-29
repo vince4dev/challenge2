@@ -103,6 +103,18 @@ a:hover {
 }
 ```
 
+### Using focus (:focus)
+
+- I used the :focus pseudo-class to improve accessibility, users can navigate to the title with the keyboard and use the link with the spacebar.
+
+```css
+a:focus {
+  color: var(--c-yellow-light);
+  outline: 1px solid var(--c-yellow);
+  outline-offset: 2px;
+}
+```
+
 ## Useful resources
 
 - [google-webfonts-helper](https://gwfh.mranftl.com/fonts) - This helped me find the font and integrate it into the project.
