@@ -48,6 +48,10 @@
   margin: 0;
 }
 
+h1 {
+  padding: 0;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -57,7 +61,6 @@ a {
   text-decoration: none;
 }
 
-a,
 span,
 button,
 p {
@@ -87,10 +90,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-
-  @media (width > 400px) {
-    max-width: 384px;
-  }
 
   /* Image */
   .card__img {
@@ -131,10 +130,6 @@ body {
       color: var(--c-Gray-950);
       font-size: var(--fs-12);
       font-weight: var(--fw-medium);
-
-      @media (width > 400px) {
-        font-size: var(--fs-14);
-      }
     }
 
     /* Link */
@@ -146,20 +141,12 @@ body {
       &:hover {
         color: var(--c-yellow-light);
       }
-
-      @media (width > 400px) {
-        font-size: var(--fs-24);
-      }
     }
 
     /* Description */
     p {
       color: var(--c-Gray-500);
       font-size: var(--fs-14);
-
-      @media (width > 400px) {
-        font-size: var(--fs-16);
-      }
     }
   }
 
@@ -173,6 +160,28 @@ body {
       color: var(--c-Gray-950);
       font-size: var(--fs-14);
       font-weight: var(--fw-bold);
+    }
+  }
+}
+
+@media screen and (width >= 400px) {
+  .card {
+    max-width: 384px;
+
+    button {
+      font-size: var(--fs-14);
+    }
+
+    span {
+      font-size: var(--fs-14);
+    }
+
+    a {
+      font-size: var(--fs-24);
+    }
+
+    p {
+      font-size: var(--fs-16);
     }
   }
 }
